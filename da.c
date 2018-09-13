@@ -196,6 +196,7 @@ void displayDA(DA *items, FILE *fp)
             {
                 items->display(items->data[i],fp);
         
+                //If not last element
                  if(i != items->arraySize - 1)
                  {
                    fprintf(fp,",");
